@@ -1,0 +1,131 @@
+.banar-main img {
+    width: 100%;
+    height: auto;
+}
+
+.trendy-main, .sale-main {
+    padding: 20px;
+}
+
+.trendy-inner-main, .sale-inner-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.trendy-child, .sale-child {
+    flex: 1;
+    min-width: 200px;
+}
+
+.trendy-child a img, .sale-child a img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 485px) and (max-width: 768px){
+    .trendy-inner-main, .sale-inner-main {
+        justify-content: center;
+    }
+
+    .trendy-child, .sale-child {
+        flex: 1 1 45%;
+        margin-bottom: 10px;
+    }
+
+    .trendy-child a img, .sale-child a img {
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 485px) {
+    .trendy-child, .sale-child {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+
+    .trendy-child a img, .sale-child a img {
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    .banar-main img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .trendy-main, .sale-main {
+        padding: 10px;
+    }
+
+    .trendy-inner-main, .sale-inner-main {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  
+    .contact-form {
+      gap: 15px;
+    }
+  
+    .form-group label {
+      font-size: 0.9rem;
+    }
+  
+    input, textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .form-status {
+      font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .contact-form {
+      gap: 10px;
+    }
+  
+    .form-group label {
+      font-size: 0.85rem;
+    }
+  
+    input, textarea {
+      font-size: 0.85rem;
+      padding: 6px;
+    }
+  
+    .submit-btn {
+      font-size: 0.85rem;
+      padding: 6px 14px;
+    }
+  
+    .form-status {
+      font-size: 0.85rem;
+    }
+}
